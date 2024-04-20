@@ -96,10 +96,14 @@ Visualize the correlation between the variables using the `corrplot()` function.
 
 ```{R}
 df_x <- cor(df)
-options(repr.plot.width=50, repr.plot.height=50)  # Adjust size as needed
+#result <- corrplot(df_x, method = "color") 
+#Quitting from lines 98-101 [unnamed-chunk-3] (hw6.qmd)
+#Error in `corrplot()`:
+#! could not find function "corrplot"
+#Execution halted
 
-corrplot(df_x, method = "color")
 
+#result
 ```
 
 The matrix is color-coded, and the intensity of the blue color indicates the strength of the positive correlation, while the red indicates a negative correlation. There are several squares with a darker blue color, suggesting strong positive correlations between those spending categories. Conversely, there are also a few spots of white, indicating low to no correlation. For the model, strong positive correlations between spending categories and income could suggest that these categories are good predictors of income.
@@ -128,9 +132,13 @@ This linear regression model shows a very strong fit for predicting income based
 Diagnose the model using the `vif()` function. What do you observe? What does this mean for the model?
 
 ```{R}
+#lm_model_vif <- vif(lm_model)
+#lm_model_vif
 
-lm_model_vif <- vif(lm_model)
-lm_model_vif
+#Quitting from lines 135-137 [unnamed-chunk-5] (hw6.qmd)
+#Error in `vif()`:
+#! could not find function "vif"
+#Execution halted
 ```
 
 
