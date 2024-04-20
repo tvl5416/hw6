@@ -82,7 +82,6 @@ df <- df %>% mutate_if(is.character, as.factor)
 # Drop rows with any missing values
 df <- df %>% drop_na()
 
-df
 
 ```
 
@@ -230,7 +229,6 @@ scores <- pca$scores[, 1:4]
 
 # Create a new data frame with income and the first four principal components
 df_pca <- data.frame(income = df$income, scores)
-df_pca
 ```
 
 
